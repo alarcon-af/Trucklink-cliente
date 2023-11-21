@@ -107,7 +107,7 @@ class ReciboFragment : Fragment() {
                 carga = param1!!,
                 peso = param2!!,
                 cliente = userId,
-                driver = null,
+                driver = "",
                 direccion_recoger = param3!!,
                 direccion_entregar = param4!!,
                 latitud = 0.0,

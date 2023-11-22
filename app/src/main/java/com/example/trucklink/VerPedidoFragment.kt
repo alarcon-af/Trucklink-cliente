@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -60,13 +62,15 @@ class VerPedidoFragment : Fragment() {
         val precio = view.findViewById<TextView>(R.id.precioPedido)
         val estado = view.findViewById<TextView>(R.id.estadoPedido)
         val volver = view.findViewById<Button>(R.id.cancelar)
+        val foto = view.findViewById<ImageView>(R.id.detailImage)
 
         myRef.addValueEventListener(object: ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot){
-                val user = dataSnapshot.getValue(User::class.java)
+                val user = dataSnapshot.getValue(Driver::class.java)
                 if(user!=null){
                     val nombreCompleto = "${user.nombre} ${user.apellido}"
                     nombre.text = nombreCompleto
+                    Glide.with(requireActivity()).load(user.foto).into(foto)
                 }
             }
             override fun onCancelled(databaseError: DatabaseError) {

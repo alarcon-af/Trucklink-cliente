@@ -23,7 +23,7 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
-class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class  Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var fab: FloatingActionButton
@@ -55,6 +55,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
+
 
                 R.id.home -> replaceFragment(HomeFragment())
                 R.id.mapa -> replaceFragment(MapaFragment())

@@ -73,7 +73,7 @@ class ReciboFragment : Fragment() {
         val confirmar = view.findViewById<Button>(R.id.confirmar)
 
         cargaTextView.text = "${param1 ?: ""}"
-        pesoTextView.text = "${param2.toString() ?: ""}"
+        pesoTextView.text = "${param2?.toString() ?: ""}"
         recogerTextView.text = "${param3 ?: ""}"
         entregarTextView.text = "${param4 ?: ""}"
 

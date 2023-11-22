@@ -137,6 +137,14 @@ class HomeFragment : Fragment() {
                 requestLocationPermission()
             }
         }
+        val verPedidos = view?.findViewById<ImageButton>(R.id.pedidos)
+        verPedidos?.setOnClickListener{
+            val listaFragment = HistorialFragment()
+            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragment_container, listaFragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        }
         return view
     }
 

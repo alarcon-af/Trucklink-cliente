@@ -4,9 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ReciboFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="450dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/> <!-- Color blanco o el que desees -->
 
 
     <TextView
@@ -15,11 +23,11 @@
         android:layout_height="75dp"
         android:text="Resumen del pedido"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.21" />
 
     <TextView
@@ -27,11 +35,11 @@
         android:layout_height="75dp"
         android:text="Tipo de carga _______________"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.337" />
 
     <TextView
@@ -40,11 +48,11 @@
         android:layout_height="75dp"
         android:text="Carga pesada"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.337" />
 
     <TextView
@@ -52,11 +60,11 @@
         android:layout_height="75dp"
         android:text="Peso _______________________"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.41" />
 
     <TextView
@@ -65,11 +73,11 @@
         android:layout_height="75dp"
         android:text="Peso"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.41" />
 
     <TextView
@@ -78,11 +86,11 @@
         android:layout_height="75dp"
         android:text="Ton."
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.41" />
 
     <TextView
@@ -90,11 +98,11 @@
         android:layout_height="75dp"
         android:text="Dirección de recolección ____"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
@@ -103,11 +111,11 @@
         android:layout_height="75dp"
         android:text="Direccion"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
@@ -115,11 +123,11 @@
         android:layout_height="75dp"
         android:text="Dirección de entrega ________"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.6" />
 
 
@@ -129,11 +137,11 @@
         android:layout_height="75dp"
         android:text="Direccion"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.6" />
 
     <TextView
@@ -141,11 +149,11 @@
         android:layout_height="75dp"
         android:text="Cliente _____________________"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.68" />
 
     <TextView
@@ -154,11 +162,11 @@
         android:layout_height="75dp"
         android:text="Cliente"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.68" />
 
     <TextView
@@ -166,11 +174,11 @@
         android:layout_height="75dp"
         android:text="Cedula ______________________"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.759" />
 
     <TextView
@@ -179,11 +187,11 @@
         android:layout_height="75dp"
         android:text="Cedula"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.759" />
 
     <TextView
@@ -192,11 +200,11 @@
         android:layout_height="75dp"
         android:text="Valor:                          $xxx.xxx.xxx"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.854" />
 
     <Button
@@ -204,6 +212,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cancelar"
+        android:backgroundTint="@color/dark_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.251"
@@ -216,6 +225,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirmar"
+        android:backgroundTint="@color/dark_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.67"
@@ -229,11 +239,11 @@
         android:layout_height="0dp"
         android:scaleType="fitCenter"
         android:src="@drawable/papel"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView

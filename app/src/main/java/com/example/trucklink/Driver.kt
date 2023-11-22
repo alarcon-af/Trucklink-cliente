@@ -1,8 +1,7 @@
 package com.example.trucklink
-
 import android.net.Uri
 
-data class User (
+data class Driver (
     var correo: String = "",
     var password: String = "",
     var cedula: Long = 0,

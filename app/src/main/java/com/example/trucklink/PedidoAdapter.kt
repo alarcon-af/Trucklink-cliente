@@ -24,6 +24,7 @@ class PedidoAdapter(private val context:Context, private val pedidos: List<Pedid
 
     override fun onBindViewHolder(holder: PedidoViewHolder, position: Int) {
         val pedido = pedidos[position]
+        Glide.with(context).load(R.drawable.white).into(holder.recImage)
         holder.recTitle.text = pedidos[position].cliente
         holder.recDesc.text = pedidos[position].carga
         //holder.bind(pedido, onPedidoClicked)

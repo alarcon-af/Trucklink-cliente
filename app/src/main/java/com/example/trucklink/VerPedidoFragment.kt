@@ -50,7 +50,7 @@ class VerPedidoFragment : Fragment() {
         database = FirebaseDatabase.getInstance()
         val idCli ="${pedido!!.cliente ?: ""}"
         val idPedido = "${pedido!!.pedidoId ?: ""}"
-        myRef = database.getReference("usuarios/").child(idCli)
+        myRef = database.getReference("conductores/").child(idCli)
         val userID = auth.currentUser!!.uid
         val nombre =view.findViewById<TextView>(R.id.nombreCliente)
         val carga = view.findViewById<TextView>(R.id.cargaPedido)
@@ -60,7 +60,6 @@ class VerPedidoFragment : Fragment() {
         val precio = view.findViewById<TextView>(R.id.precioPedido)
         val estado = view.findViewById<TextView>(R.id.estadoPedido)
         val volver = view.findViewById<Button>(R.id.cancelar)
-        val confirmar = view.findViewById<Button>(R.id.confirmar)
 
         myRef.addValueEventListener(object: ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot){
